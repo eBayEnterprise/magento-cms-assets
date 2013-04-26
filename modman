@@ -1,0 +1,3 @@
+src/app/code/local/TrueAction/SessionSet/ app/code/local/TrueAction/SessionSet/
+src/app/design/frontend/trueaction/default/template/sessionpush app/design/frontend/trueaction/default/template/sessionpush
+src/app/etc/modules/TrueAction_SessionSet.xml app/etc/modules/TrueAction_SessionSet.xml
