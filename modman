@@ -1,3 +1,5 @@
-src/app/code/local/TrueAction/SessionSet/ app/code/local/TrueAction/SessionSet/
-src/app/design/frontend/trueaction/default/template/sessionpush app/design/frontend/trueaction/default/template/sessionpush
-src/app/etc/modules/TrueAction_SessionSet.xml app/etc/modules/TrueAction_SessionSet.xml
+src/app/code/local/TrueAction/CmsPageCss/etc/config.xml app/
+src/app/code/local/TrueAction/CmsPageCss/Model/Observer.php
+src/app/code/local/TrueAction/CmsPageCss/Model/Page/Revision.php
+src/app/code/local/TrueAction/CmsPageCss/sql/trueaction_cmspagecss_setup/mysql4-install-0.1.0.php
+src/app/etc/modules/TrueAction_CmsPageCss.xml 
