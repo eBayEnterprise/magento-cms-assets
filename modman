@@ -1,5 +1,5 @@
-src/app/code/local/TrueAction/CmsPageCss/etc/config.xml app/
-src/app/code/local/TrueAction/CmsPageCss/Model/Observer.php
-src/app/code/local/TrueAction/CmsPageCss/Model/Page/Revision.php
-src/app/code/local/TrueAction/CmsPageCss/sql/trueaction_cmspagecss_setup/mysql4-install-0.1.0.php
-src/app/etc/modules/TrueAction_CmsPageCss.xml 
+src/app/code/local/TrueAction/CmsPageCss/etc/config.xml app/code/local/TrueAction/CmsPageCss/etc/config.xml
+src/app/code/local/TrueAction/CmsPageCss/Model/Observer.php app/code/local/TrueAction/CmsPageCss/Model/Observer.php
+src/app/code/local/TrueAction/CmsPageCss/Model/Page/Revision.php app/code/local/TrueAction/CmsPageCss/Model/Page/Revision.php
+src/app/code/local/TrueAction/CmsPageCss/sql/trueaction_cmspagecss_setup/mysql4-install-0.1.0.php app/code/local/TrueAction/CmsPageCss/sql/trueaction_cmspagecss_setup/mysql4-install-0.1.0.php
+src/app/etc/modules/TrueAction_CmsPageCss.xml app/etc/modules/TrueAction_CmsPageCss.xml
