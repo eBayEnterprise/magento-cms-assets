@@ -1,76 +1,71 @@
 <?xml version="1.0"?>
 <config>
 	<modules>
-		<TrueAction_CmsPageCss>
+		<EbayEnterprise_CmsAssets>
 			<version>0.1.0</version>
-		</TrueAction_CmsPageCss>
+		</EbayEnterprise_CmsAssets>
 	</modules>
-	
+
 	<global>
 	  <resources>
-			<trueaction_cmspagecss_setup>
+			<EbayEnterprise_CmsAssets_setup>
 				<setup>
-					<module>TrueAction_CmsPageCss</module>
+					<module>EbayEnterprise_CmsAssets</module>
 				</setup>
 				<connection>
 					<use>core_setup</use>
 				</connection>
-			</trueaction_cmspagecss_setup>
-			<trueaction_cmspagecss_write>
+			</EbayEnterprise_CmsAssets_setup>
+			<EbayEnterprise_CmsAssets_write>
 				<connection>
 					<use>core_write</use>
 				</connection>
-			</trueaction_cmspagecss_write>
-			<trueaction_cmspagecss_read>
+			</EbayEnterprise_CmsAssets_write>
+			<EbayEnterprise_CmsAssets_read>
 				<connection>
 					<use>core_read</use>
-				</connection>                		        		        
-			</trueaction_cmspagecss_read>
+				</connection>
+			</EbayEnterprise_CmsAssets_read>
 	  </resources>
-
-		<!--
-		TrueAction_TrueAction_CmsPageCss_Model_Page_Revision
-		Enterprise_Cms_Model_Page_Revision
-		-->
 
 		<models>
 			<enterprise_cms>
 				<rewrite>
-					<page_revision>TrueAction_CmsPageCss_Model_Page_Revision</page_revision>
+					<page_revision>EbayEnterprise_CmsAssets_Model_Page_Revision</page_revision>
 				</rewrite>
 			</enterprise_cms>
 		</models>
 
 	</global>
-	
-	<adminhtml>	
+
+	<adminhtml>
     <events>
 
       <adminhtml_cms_page_edit_tab_content_prepare_form>
         <observers>
-          <trueaction_page_edit_tab_content>
+          <ebayenterprise_page_edit_tab_content>
             <type>singleton</type>
-            <class>TrueAction_CmsPageCss_Model_Observer</class>
+            <class>EbayEnterprise_CmsAssets_Model_Observer</class>
             <method>adminhtmlCmsPageEditTabContentPrepareForm</method>
-          </trueaction_page_edit_tab_content>
+          </ebayenterprise_page_edit_tab_content>
         </observers>
       </adminhtml_cms_page_edit_tab_content_prepare_form>
 
       <cms_page_prepare_save>
         <observers>
-          <trueaction_cms_save_page>
+          <ebayenterprise_cms_save_page>
             <type>singleton</type>
-            <class>TrueAction_CmsPageCss_Model_Observer</class>
+            <class>EbayEnterprise_CmsAssets_Model_Observer</class>
             <method>cmsPagePrepareSave</method>
-          </trueaction_cms_save_page>
+          </ebayenterprise_cms_save_page>
         </observers>
       </cms_page_prepare_save>
-	
+
 			<controller_action_layout_generate_blocks_after>
 				<observers>
 					<pulsestorm_javascriptevent_addjs>
 						<type>singleton</type>
-						<class>TrueAction_CmsPageCss_Model_Observer</class>
+						<class>EbayEnterprise_CmsAssets_Model_Observer</class>
 						<method>addJavascriptBlock</method>
 					</pulsestorm_javascriptevent_addjs>
 				</observers>

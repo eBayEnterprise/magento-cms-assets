@@ -1,12 +1,12 @@
 <?php
 /**
- * TrueAction CSS Page CSS module
+ * eBay Enterprise CMS Assets module
  *
- * @category    TrueAction
- * @package     TrueAction_CmsPageCss
+ * @category    EbayEnterprise
+ * @package     EbayEnterprise_CmsAssets
  */
- 
-class TrueAction_CmsPageCss_Model_Page_Revision extends Mage_Core_Model_Abstract
+
+class EbayEnterprise_CmsAssets_Model_Page_Revision extends Mage_Core_Model_Abstract
 {
     /**
      * Prefix of model events names.
@@ -111,7 +111,7 @@ class TrueAction_CmsPageCss_Model_Page_Revision extends Mage_Core_Model_Abstract
         $attributes = $this->_config->getPageRevisionControledAttributes();
 
         $attributes[] = 'header_css';
-        
+
         foreach ($this->getData() as $key => $value) {
             if (in_array($key, $attributes)) {
                 $this->unsetData($key);

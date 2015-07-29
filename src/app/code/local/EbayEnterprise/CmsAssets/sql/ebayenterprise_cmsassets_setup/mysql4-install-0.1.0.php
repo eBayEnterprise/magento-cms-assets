@@ -1,9 +1,9 @@
 <?php
 /**
- * TrueAction CSS Page CSS module
+ * eBay Enterprise CMS Assets module
  *
- * @category    TrueAction
- * @package     TrueAction_CmsPageCss
+ * @category    EbayEnterprise
+ * @package     EbayEnterprise_CmsAssets
  */
 
 $installer = $this;
