@@ -7,7 +7,7 @@
 	</modules>
 
 	<global>
-	  <resources>
+		<resources>
 			<EbayEnterprise_CmsAssets_setup>
 				<setup>
 					<module>EbayEnterprise_CmsAssets</module>
@@ -26,7 +26,7 @@
 					<use>core_read</use>
 				</connection>
 			</EbayEnterprise_CmsAssets_read>
-	  </resources>
+		</resources>
 
 		<models>
 			<enterprise_cms>
@@ -35,31 +35,29 @@
 				</rewrite>
 			</enterprise_cms>
 		</models>
-
 	</global>
 
 	<adminhtml>
-    <events>
+		<events>
+			<adminhtml_cms_page_edit_tab_content_prepare_form>
+				<observers>
+					<ebayenterprise_page_edit_tab_content>
+						<type>singleton</type>
+						<class>EbayEnterprise_CmsAssets_Model_Observer</class>
+						<method>adminhtmlCmsPageEditTabContentPrepareForm</method>
+					</ebayenterprise_page_edit_tab_content>
+				</observers>
+			</adminhtml_cms_page_edit_tab_content_prepare_form>
 
-      <adminhtml_cms_page_edit_tab_content_prepare_form>
-        <observers>
-          <ebayenterprise_page_edit_tab_content>
-            <type>singleton</type>
-            <class>EbayEnterprise_CmsAssets_Model_Observer</class>
-            <method>adminhtmlCmsPageEditTabContentPrepareForm</method>
-          </ebayenterprise_page_edit_tab_content>
-        </observers>
-      </adminhtml_cms_page_edit_tab_content_prepare_form>
-
-      <cms_page_prepare_save>
-        <observers>
-          <ebayenterprise_cms_save_page>
-            <type>singleton</type>
-            <class>EbayEnterprise_CmsAssets_Model_Observer</class>
-            <method>cmsPagePrepareSave</method>
-          </ebayenterprise_cms_save_page>
-        </observers>
-      </cms_page_prepare_save>
+			<cms_page_prepare_save>
+				<observers>
+					<ebayenterprise_cms_save_page>
+						<type>singleton</type>
+						<class>EbayEnterprise_CmsAssets_Model_Observer</class>
+						<method>cmsPagePrepareSave</method>
+					</ebayenterprise_cms_save_page>
+				</observers>
+			</cms_page_prepare_save>
 
 			<controller_action_layout_generate_blocks_after>
 				<observers>
@@ -70,8 +68,6 @@
 					</pulsestorm_javascriptevent_addjs>
 				</observers>
 			</controller_action_layout_generate_blocks_after>
-
-    </events>
- </adminhtml>
-
+		</events>
+	</adminhtml>
 </config>

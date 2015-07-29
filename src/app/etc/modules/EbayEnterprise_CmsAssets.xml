@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <config>
-    <modules>
-        <EbayEnterprise_CmsAssets>
-            <active>true</active>
-            <codePool>local</codePool>
-        </EbayEnterprise_CmsAssets>
-    </modules>
+	<modules>
+		<EbayEnterprise_CmsAssets>
+			<active>true</active>
+			<codePool>local</codePool>
+		</EbayEnterprise_CmsAssets>
+	</modules>
 </config>
