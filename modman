@@ -1,5 +1,3 @@
-src/app/code/local/EbayEnterprise/CmsAssets/etc/config.xml app/code/local/EbayEnterprise/CmsAssets/etc/config.xml
-src/app/code/local/EbayEnterprise/CmsAssets/Model/Observer.php app/code/local/EbayEnterprise/CmsAssets/Model/Observer.php
-src/app/code/local/EbayEnterprise/CmsAssets/Model/Page/Revision.php app/code/local/EbayEnterprise/CmsAssets/Model/Page/Revision.php
-src/app/code/local/EbayEnterprise/CmsAssets/sql/EbayEnterprise_CmsAssets_setup/mysql4-install-0.1.0.php app/code/local/EbayEnterprise/CmsAssets/sql/EbayEnterprise_CmsAssets_setup/mysql4-install-0.1.0.php
-src/app/etc/modules/EbayEnterprise_CmsAssets.xml app/etc/modules/EbayEnterprise_CmsAssets.xml
+# Core
+app/code/local/EbayEnterprise/* app/code/local/EbayEnterprise/
+app/etc/modules/*.xml app/etc/modules/
