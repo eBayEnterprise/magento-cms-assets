@@ -6,8 +6,8 @@
  * @package     EbayEnterprise_CmsAssets
  */
 
-class EbayEnterprise_CmsAssets_Model_Page_Revision extends Mage_Core_Model_Abstract
-{
+class EbayEnterprise_CmsAssets_Model_Page_Revision extends Mage_Core_Model_Abstract {
+
 	/**
 	 * Prefix of model events names.
 	 *
@@ -195,4 +195,5 @@ class EbayEnterprise_CmsAssets_Model_Page_Revision extends Mage_Core_Model_Abstr
 		$this->setOrigData();
 		return $this;
 	}
+
 }

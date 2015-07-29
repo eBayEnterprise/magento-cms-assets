@@ -8,7 +8,7 @@
 
 class EbayEnterprise_CmsAssets_Model_Observer extends Varien_Event_Observer {
 
-	public function adminhtmlCmsPageEditTabContentPrepareForm(Varien_Event_Observer $observer)
+	public function pageAdminEditTabContentPrepareForm(Varien_Event_Observer $observer)
 	{
 		$model = Mage::registry('cms_page');
 		$form = $observer->getForm();
@@ -22,7 +22,7 @@ class EbayEnterprise_CmsAssets_Model_Observer extends Varien_Event_Observer {
 		));
 	}
 
-	public function cmsPagePrepareSave(Varien_Event_Observer $observer)
+	public function pageAdminPrepareSave(Varien_Event_Observer $observer)
 	{
 		$model = $observer->getEvent()->getPage();
 		$request = $observer->getEvent()->getRequest();
@@ -30,7 +30,7 @@ class EbayEnterprise_CmsAssets_Model_Observer extends Varien_Event_Observer {
 		$model->setHeaderCss($data['header_css']);
 	}
 
-	public function addJavascriptBlock($observer)
+	public function pageAdminAddJavascriptBlock($observer)
 	{
 		$controller = $observer->getAction();
 		$layout = $controller->getLayout();

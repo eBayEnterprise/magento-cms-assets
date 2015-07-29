@@ -41,31 +41,31 @@
 		<events>
 			<adminhtml_cms_page_edit_tab_content_prepare_form>
 				<observers>
-					<ebayenterprise_page_edit_tab_content>
+					<ebayenterprise_cmsassets_page_edit_tab_content_prepare_form>
 						<type>singleton</type>
 						<class>EbayEnterprise_CmsAssets_Model_Observer</class>
-						<method>adminhtmlCmsPageEditTabContentPrepareForm</method>
-					</ebayenterprise_page_edit_tab_content>
+						<method>pageAdminEditTabContentPrepareForm</method>
+					</ebayenterprise_cmsassets_page_edit_tab_content_prepare_form>
 				</observers>
 			</adminhtml_cms_page_edit_tab_content_prepare_form>
 
 			<cms_page_prepare_save>
 				<observers>
-					<ebayenterprise_cms_save_page>
+					<ebayenterprise_cmsassets_page_prepare_save>
 						<type>singleton</type>
 						<class>EbayEnterprise_CmsAssets_Model_Observer</class>
-						<method>cmsPagePrepareSave</method>
-					</ebayenterprise_cms_save_page>
+						<method>pageAdminPrepareSave</method>
+					</ebayenterprise_cmsassets_page_prepare_save>
 				</observers>
 			</cms_page_prepare_save>
 
 			<controller_action_layout_generate_blocks_after>
 				<observers>
-					<pulsestorm_javascriptevent_addjs>
+					<ebayenterprise_cmsassets_layout_generate_blocks_after>
 						<type>singleton</type>
 						<class>EbayEnterprise_CmsAssets_Model_Observer</class>
-						<method>addJavascriptBlock</method>
-					</pulsestorm_javascriptevent_addjs>
+						<method>pageAdminAddJavascriptBlock</method>
+					</ebayenterprise_cmsassets_layout_generate_blocks_after>
 				</observers>
 			</controller_action_layout_generate_blocks_after>
 		</events>
