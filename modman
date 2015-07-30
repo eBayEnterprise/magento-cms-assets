@@ -1,3 +1,3 @@
 # Core
-app/code/local/EbayEnterprise/* app/code/local/EbayEnterprise/
-app/etc/modules/*.xml app/etc/modules/
+src/app/code/local/EbayEnterprise/* app/code/local/EbayEnterprise/
+src/app/etc/modules/*.xml app/etc/modules/
