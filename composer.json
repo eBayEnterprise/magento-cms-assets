@@ -1,16 +1,16 @@
 {
-    "name": "ebayenterprise/cms-assets",
-    "description": "eBay Enterprise CMS Assets Extension",
-    "authors": [
-        {
-        	"name": "Scott Buchanan",
-        	"role": "Lead Developer",
-        	"email": "sbuchanan@ebay.com"
-        },
-        {
-        	"name": "Don Myers",
-        	"role": "Original Developer"
-        }
-    ],
-    "type": "magento-module"
+	"name": "ebayenterprise/cms-assets",
+	"description": "eBay Enterprise CMS Assets Extension",
+	"authors": [
+		{
+			"name": "Scott Buchanan",
+			"role": "Lead Developer",
+			"email": "sbuchanan@ebay.com"
+		},
+		{
+			"name": "Don Myers",
+			"role": "Original Developer"
+		}
+	],
+	"type": "magento-module"
 }
