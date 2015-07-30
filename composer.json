@@ -1,6 +1,7 @@
 {
 	"name": "ebayenterprise/cms-assets",
 	"description": "eBay Enterprise CMS Assets Extension",
+	"license": "proprietary",
 	"authors": [
 		{
 			"name": "Scott Buchanan",
