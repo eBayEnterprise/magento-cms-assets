@@ -13,5 +13,8 @@
 			"role": "Original Developer"
 		}
 	],
-	"type": "magento-module"
+	"type": "magento-module",
+	"require": {
+		"magento-hackathon/magento-composer-installer": "~2.1"
+	}
 }
