@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<layout>
+	<cms_page>
+		<reference name="head">
+			<block type="core/text" name="cmsassets_head" after="-">
+				<action method="addText">
+					<text helper="ebayenterprise_cmsassets/getCmsPageHeadAssets" />
+				</action>
+			</block>
+		</reference>
+		<reference name="before_body_end">
+			<block type="core/text" name="cmsassets_endbody" after="-">
+				<action method="addText">
+					<text helper="ebayenterprise_cmsassets/getCmsPageEndBodyAssets" />
+				</action>
+			</block>
+		</reference>
+	</cms_page>
+</layout>

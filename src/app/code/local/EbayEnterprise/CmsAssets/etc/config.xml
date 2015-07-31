@@ -2,31 +2,24 @@
 <config>
 	<modules>
 		<EbayEnterprise_CmsAssets>
-			<version>0.1.0</version>
+			<version>1.0.0</version>
 		</EbayEnterprise_CmsAssets>
 	</modules>
 
 	<global>
 		<resources>
-			<EbayEnterprise_CmsAssets_setup>
+			<ebayenterprise_cmsassets_setup>
 				<setup>
 					<module>EbayEnterprise_CmsAssets</module>
 				</setup>
-				<connection>
-					<use>core_setup</use>
-				</connection>
-			</EbayEnterprise_CmsAssets_setup>
-			<EbayEnterprise_CmsAssets_write>
-				<connection>
-					<use>core_write</use>
-				</connection>
-			</EbayEnterprise_CmsAssets_write>
-			<EbayEnterprise_CmsAssets_read>
-				<connection>
-					<use>core_read</use>
-				</connection>
-			</EbayEnterprise_CmsAssets_read>
+			</ebayenterprise_cmsassets_setup>
 		</resources>
+
+		<helpers>
+			<ebayenterprise_cmsassets>
+				<class>EbayEnterprise_CmsAssets_Helper</class>
+			</ebayenterprise_cmsassets>
+		</helpers>
 
 		<models>
 			<enterprise_cms>
@@ -37,27 +30,27 @@
 		</models>
 	</global>
 
+	<frontend>
+		<layout>
+			<updates>
+				<ebayenterprise_cmsassets>
+					<file>ebayenterprise_cmsassets.xml</file>
+				</ebayenterprise_cmsassets>
+			</updates>
+		</layout>
+	</frontend>
+
 	<adminhtml>
 		<events>
-			<adminhtml_cms_page_edit_tab_content_prepare_form>
+			<adminhtml_cms_page_edit_tab_design_prepare_form>
 				<observers>
-					<ebayenterprise_cmsassets_page_edit_tab_content_prepare_form>
+					<ebayenterprise_cmsassets_page_edit_tab_design_prepare_form>
 						<type>singleton</type>
 						<class>EbayEnterprise_CmsAssets_Model_Observer</class>
-						<method>pageAdminEditTabContentPrepareForm</method>
-					</ebayenterprise_cmsassets_page_edit_tab_content_prepare_form>
+						<method>pageAdminEditTabDesignPrepareForm</method>
+					</ebayenterprise_cmsassets_page_edit_tab_design_prepare_form>
 				</observers>
-			</adminhtml_cms_page_edit_tab_content_prepare_form>
-
-			<cms_page_prepare_save>
-				<observers>
-					<ebayenterprise_cmsassets_page_prepare_save>
-						<type>singleton</type>
-						<class>EbayEnterprise_CmsAssets_Model_Observer</class>
-						<method>pageAdminPrepareSave</method>
-					</ebayenterprise_cmsassets_page_prepare_save>
-				</observers>
-			</cms_page_prepare_save>
+			</adminhtml_cms_page_edit_tab_design_prepare_form>
 
 			<controller_action_layout_generate_blocks_after>
 				<observers>

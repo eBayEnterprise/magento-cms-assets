@@ -8,28 +8,27 @@
 
 class EbayEnterprise_CmsAssets_Model_Observer extends Varien_Event_Observer {
 
-	public function pageAdminEditTabContentPrepareForm(Varien_Event_Observer $observer)
+	public function pageAdminEditTabDesignPrepareForm(Varien_Event_Observer $observer)
 	{
 		$model = Mage::registry('cms_page');
 		$form = $observer->getForm();
-		$fieldset = $form->addFieldset('ebayenterprise_content_fieldset', array(
-			'legend' => Mage::helper('cms')->__('CMS Page External Assets'),
+		$fieldset = $form->addFieldset('ebayenterprise_design_fieldset', array(
+			'legend' => Mage::helper('cms')->__('CMS Asset Includes'),
 			'class' => 'fieldset-wide'));
-		$fieldset->addField('header_css', 'textarea', array(
-			'name'  => 'header_css',
+		$fieldset->addField('head_assets', 'textarea', array(
+			'name'  => 'head_assets',
 			'style' => 'font: 12px/15px monospace; -moz-tab-size:2; tab-size:2;',
 			'label' => Mage::helper('cms')->__('HTML for <head>'),
 			'title' => Mage::helper('cms')->__('HTML for <head>'),
-			'value' => $model->getHeaderCss()
+			'value' => $model->getHeadAssets()
 		));
-	}
-
-	public function pageAdminPrepareSave(Varien_Event_Observer $observer)
-	{
-		$model = $observer->getEvent()->getPage();
-		$request = $observer->getEvent()->getRequest();
-		$data = $request->getPost();
-		$model->setHeaderCss($data['header_css']);
+		$fieldset->addField('end_body_assets', 'textarea', array(
+			'name'  => 'end_body_assets',
+			'style' => 'font: 12px/15px monospace; -moz-tab-size:2; tab-size:2;',
+			'label' => Mage::helper('cms')->__('HTML for end of <body>'),
+			'title' => Mage::helper('cms')->__('HTML for end of <body>'),
+			'value' => $model->getEndBodyAssets()
+		));
 	}
 
 	/**
@@ -43,9 +42,13 @@ class EbayEnterprise_CmsAssets_Model_Observer extends Varien_Event_Observer {
 
 $script = <<<JSPT
 <script type="text/javascript">
-var page_header_css = document.getElementById("page_header_css");
-if (page_header_css) {
-	page_header_css.addEventListener('keydown',this.keyHandler,false);
+var page_head_assets = document.getElementById("page_head_assets");
+if (page_head_assets) {
+	page_head_assets.addEventListener('keydown', this.keyHandler, false);
+}
+var page_end_body_assets = document.getElementById("page_end_body_assets");
+if (page_end_body_assets) {
+	page_end_body_assets.addEventListener('keydown', this.keyHandler, false);
 }
 function keyHandler(e) {
 	if (e.keyCode === 9) {
