@@ -22,6 +22,9 @@
 		</helpers>
 
 		<models>
+			<ebayenterprise_cmsassets>
+				<class>EbayEnterprise_CmsAssets_Model</class>
+			</ebayenterprise_cmsassets>
 			<enterprise_cms>
 				<rewrite>
 					<config>EbayEnterprise_CmsAssets_Model_Cms_Config</config>
@@ -59,7 +62,7 @@
 				<observers>
 					<ebayenterprise_cmsassets_page_edit_tab_design_prepare_form>
 						<type>singleton</type>
-						<class>EbayEnterprise_CmsAssets_Model_Observer</class>
+						<class>ebayenterprise_cmsassets/observer</class>
 						<method>pageAdminEditTabDesignPrepareForm</method>
 					</ebayenterprise_cmsassets_page_edit_tab_design_prepare_form>
 				</observers>
