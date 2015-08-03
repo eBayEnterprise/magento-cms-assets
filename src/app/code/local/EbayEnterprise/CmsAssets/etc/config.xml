@@ -24,7 +24,7 @@
 		<models>
 			<enterprise_cms>
 				<rewrite>
-					<page_revision>EbayEnterprise_CmsAssets_Model_Page_Revision</page_revision>
+					<config>EbayEnterprise_CmsAssets_Model_Cms_Config</config>
 				</rewrite>
 			</enterprise_cms>
 		</models>
