@@ -13,7 +13,8 @@ class EbayEnterprise_CmsAssets_Model_Observer extends Varien_Event_Observer {
 		$model = Mage::registry('cms_page');
 		$form = $observer->getForm();
 		$fieldset = $form->addFieldset(
-			'ebayenterprise_design_fieldset', array(
+			'ebayenterprise_design_fieldset',
+			array(
 				'legend' => Mage::helper('cms')->__('CMS Asset Includes'),
 				'class' => 'fieldset-wide'
 			),
