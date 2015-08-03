@@ -4,6 +4,11 @@
 		<EbayEnterprise_CmsAssets>
 			<active>true</active>
 			<codePool>local</codePool>
+			<depends>
+				<Mage_Adminhtml />
+				<Mage_Catalog />
+				<Mage_Cms />
+			</depends>
 		</EbayEnterprise_CmsAssets>
 	</modules>
 </config>
