@@ -8,6 +8,16 @@
 
 class EbayEnterprise_CmsAssets_Helper_Data extends Mage_Core_Helper_Abstract {
 
+	public function getCategoryHeadAssets()
+	{
+		return Mage::registry('current_category')->getHeadAssets();
+	}
+
+	public function getCategoryEndBodyAssets()
+	{
+		return Mage::registry('current_category')->getEndBodyAssets();
+	}
+
 	public function getCmsPageHeadAssets()
 	{
 		return Mage::getBlockSingleton('cms/page')->getPage()->getHeadAssets();

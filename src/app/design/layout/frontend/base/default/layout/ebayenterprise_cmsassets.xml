@@ -16,4 +16,27 @@
 			</block>
 		</reference>
 	</cms_page>
+
+	<ebayenterprise_cmsassets_category>
+		<reference name="head">
+			<block type="core/text" name="cmsassets_head" after="-">
+				<action method="addText">
+					<text helper="ebayenterprise_cmsassets/getCategoryHeadAssets" />
+				</action>
+			</block>
+		</reference>
+		<reference name="before_body_end">
+			<block type="core/text" name="cmsassets_endbody" after="-">
+				<action method="addText">
+					<text helper="ebayenterprise_cmsassets/getCategoryEndBodyAssets" />
+				</action>
+			</block>
+		</reference>
+	</ebayenterprise_cmsassets_category>
+	<catalog_category_default>
+		<update handle="ebayenterprise_cmsassets_category" />
+	</catalog_category_default>
+	<catalog_category_layered>
+		<update handle="ebayenterprise_cmsassets_category" />
+	</catalog_category_layered>
 </layout>
