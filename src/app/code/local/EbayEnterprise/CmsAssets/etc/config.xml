@@ -28,6 +28,12 @@
 				</rewrite>
 			</enterprise_cms>
 		</models>
+
+		<blocks>
+			<ebayenterprise_cmsassets>
+				<class>EbayEnterprise_CmsAssets_Block</class>
+			</ebayenterprise_cmsassets>
+		</blocks>
 	</global>
 
 	<frontend>
@@ -41,6 +47,13 @@
 	</frontend>
 
 	<adminhtml>
+		<layout>
+			<updates>
+				<ebayenterprise_cmsassets>
+					<file>ebayenterprise_cmsassets.xml</file>
+				</ebayenterprise_cmsassets>
+			</updates>
+		</layout>
 		<events>
 			<adminhtml_cms_page_edit_tab_design_prepare_form>
 				<observers>
@@ -51,16 +64,6 @@
 					</ebayenterprise_cmsassets_page_edit_tab_design_prepare_form>
 				</observers>
 			</adminhtml_cms_page_edit_tab_design_prepare_form>
-
-			<controller_action_layout_generate_blocks_after>
-				<observers>
-					<ebayenterprise_cmsassets_layout_generate_blocks_after>
-						<type>singleton</type>
-						<class>EbayEnterprise_CmsAssets_Model_Observer</class>
-						<method>pageAdminAddJavascriptBlock</method>
-					</ebayenterprise_cmsassets_layout_generate_blocks_after>
-				</observers>
-			</controller_action_layout_generate_blocks_after>
 		</events>
 	</adminhtml>
 </config>

@@ -2,7 +2,7 @@
 /**
  * eBay Enterprise CMS Assets module
  *
- * @category	EbayEnterprise
+ * @category    EbayEnterprise
  * @package     EbayEnterprise_CmsAssets
  */
 
@@ -70,6 +70,7 @@ $categoryInstaller->addAttribute(Mage_Catalog_Model_Category::ENTITY, 'head_asse
 	'visible'    => true,
 	'required'   => false,
 	'sort_order' => 21,
+	'input_renderer' => 'ebayenterprise_cmsassets/adminhtml_codeeditor',
 	'global'     => Mage_Catalog_Model_Resource_Eav_Attribute::SCOPE_STORE,
 ));
 $categoryInstaller->addAttribute(Mage_Catalog_Model_Category::ENTITY, 'end_body_assets', array(
@@ -80,6 +81,7 @@ $categoryInstaller->addAttribute(Mage_Catalog_Model_Category::ENTITY, 'end_body_
 	'visible'    => true,
 	'required'   => false,
 	'sort_order' => 22,
+	'input_renderer' => 'ebayenterprise_cmsassets/adminhtml_codeeditor',
 	'global'     => Mage_Catalog_Model_Resource_Eav_Attribute::SCOPE_STORE,
 ));
 

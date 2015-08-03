@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<layout>
+	<ebayenterprise_cmsassets_adminhtml_codeeditor>
+        <reference name="head">
+            <action method="addJs">
+                <script>ebayenterprise_cmsassets/code-editor.js</script>
+            </action>
+        </reference>
+	</ebayenterprise_cmsassets_adminhtml_codeeditor>
+    <adminhtml_cms_page_edit>
+        <update handle="ebayenterprise_cmsassets_adminhtml_codeeditor"/>
+    </adminhtml_cms_page_edit>
+    <adminhtml_catalog_category_edit>
+        <update handle="ebayenterprise_cmsassets_adminhtml_codeeditor"/>
+    </adminhtml_catalog_category_edit>
+</layout>

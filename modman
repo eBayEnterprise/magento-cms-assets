@@ -1,3 +1,10 @@
 # Core
 src/app/code/local/EbayEnterprise/* app/code/local/EbayEnterprise/
 src/app/etc/modules/*.xml app/etc/modules/
+
+# Layout
+src/app/design/adminhtml/default/default/layout/* app/design/adminhtml/default/default/layout/
+src/app/design/frontend/base/default/layout/* app/design/frontend/base/default/layout/
+
+# Lib JS
+src/js/* js/
