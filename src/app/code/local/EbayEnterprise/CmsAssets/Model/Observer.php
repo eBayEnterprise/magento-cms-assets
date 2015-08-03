@@ -12,9 +12,12 @@ class EbayEnterprise_CmsAssets_Model_Observer extends Varien_Event_Observer {
 	{
 		$model = Mage::registry('cms_page');
 		$form = $observer->getForm();
-		$fieldset = $form->addFieldset('ebayenterprise_design_fieldset', array(
-			'legend' => Mage::helper('cms')->__('CMS Asset Includes'),
-			'class' => 'fieldset-wide'));
+		$fieldset = $form->addFieldset(
+			'ebayenterprise_design_fieldset', array(
+				'legend' => Mage::helper('cms')->__('CMS Asset Includes'),
+				'class' => 'fieldset-wide'
+			),
+			'^');
 		$fieldset->addField('head_assets', 'textarea', array(
 			'name'  => 'head_assets',
 			'style' => 'font: 12px/15px monospace; -moz-tab-size:2; tab-size:2;',
