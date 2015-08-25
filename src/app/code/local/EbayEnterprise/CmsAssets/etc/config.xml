@@ -68,5 +68,15 @@
 				</observers>
 			</adminhtml_cms_page_edit_tab_design_prepare_form>
 		</events>
+		<cms>
+			<browser>
+				<extensions>
+					<allowed>
+						<css>1</css>
+						<js>1</js>
+					</allowed>
+				</extensions>
+			</browser>
+		</cms>
 	</adminhtml>
 </config>
