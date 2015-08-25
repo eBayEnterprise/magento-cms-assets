@@ -24,14 +24,16 @@ class EbayEnterprise_CmsAssets_Model_Observer extends Varien_Event_Observer {
 			'style' => EbayEnterprise_CmsAssets_Helper_Data::EDITOR_STYLE,
 			'label' => Mage::helper('cms')->__('HTML for <head>'),
 			'title' => Mage::helper('cms')->__('HTML for <head>'),
-			'value' => $model->getHeadAssets()
+			'value' => $model->getHeadAssets(),
+			'class' => 'code-editor',
 		));
 		$fieldset->addField('end_body_assets', 'textarea', array(
 			'name'  => 'end_body_assets',
 			'style' => EbayEnterprise_CmsAssets_Helper_Data::EDITOR_STYLE,
 			'label' => Mage::helper('cms')->__('HTML for end of <body>'),
 			'title' => Mage::helper('cms')->__('HTML for end of <body>'),
-			'value' => $model->getEndBodyAssets()
+			'value' => $model->getEndBodyAssets(),
+			'class' => 'code-editor',
 		));
 	}
 

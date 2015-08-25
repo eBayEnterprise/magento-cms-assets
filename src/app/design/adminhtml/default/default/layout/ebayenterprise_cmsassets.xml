@@ -13,4 +13,7 @@
     <adminhtml_catalog_category_edit>
         <update handle="ebayenterprise_cmsassets_adminhtml_codeeditor"/>
     </adminhtml_catalog_category_edit>
+    <adminhtml_cms_page_revision_edit>
+        <update handle="ebayenterprise_cmsassets_adminhtml_codeeditor"/>
+    </adminhtml_cms_page_revision_edit>
 </layout>
