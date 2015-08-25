@@ -13,22 +13,27 @@ class EbayEnterprise_CmsAssets_Helper_Data extends Mage_Core_Helper_Abstract
 
 	public function getCategoryHeadAssets()
 	{
-		return Mage::registry('current_category')->getHeadAssets();
+		return $this->_filterHtml(Mage::registry('current_category')->getHeadAssets());
 	}
 
 	public function getCategoryEndBodyAssets()
 	{
-		return Mage::registry('current_category')->getEndBodyAssets();
+		return $this->_filterHtml(Mage::registry('current_category')->getEndBodyAssets());
 	}
 
 	public function getCmsPageHeadAssets()
 	{
-		return Mage::getBlockSingleton('cms/page')->getPage()->getHeadAssets();
+		return $this->_filterHtml(Mage::getBlockSingleton('cms/page')->getPage()->getHeadAssets());
 	}
 
 	public function getCmsPageEndBodyAssets()
 	{
-		return Mage::getBlockSingleton('cms/page')->getPage()->getEndBodyAssets();
+		return $this->_filterHtml(Mage::getBlockSingleton('cms/page')->getPage()->getEndBodyAssets());
+	}
+
+	protected function _filterHtml($html)
+	{
+		return Mage::getSingleton('widget/template_filter')->filter($html);
 	}
 
 }
