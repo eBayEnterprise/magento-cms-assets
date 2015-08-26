@@ -25,4 +25,13 @@ $(document).observe('dom:loaded', function () {
 			e.preventDefault();
 		}
 	});
+
+	// Yes, it's hacky as hell, but there's no better way without overriding everything.
+	var updateElementAtCursorParent = updateElementAtCursor;
+	updateElementAtCursor = function (el, value, win) {
+		if (el.hasClassName('code-editor')) {
+			value = value.replace(/.*({{.+}}).*/, '$1', value);
+		}
+		updateElementAtCursorParent(el, value, win);
+	}
 });
