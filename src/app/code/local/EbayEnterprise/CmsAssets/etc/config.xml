@@ -74,6 +74,7 @@
 					<allowed>
 						<css>1</css>
 						<js>1</js>
+						<svg>1</svg>
 					</allowed>
 				</extensions>
 			</browser>
