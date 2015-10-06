@@ -3,7 +3,7 @@
 	<modules>
 		<EbayEnterprise_CmsAssets>
 			<active>true</active>
-			<codePool>local</codePool>
+			<codePool>community</codePool>
 			<depends>
 				<Mage_Adminhtml />
 				<Mage_Catalog />
