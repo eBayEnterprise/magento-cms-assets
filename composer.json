@@ -1,7 +1,7 @@
 {
-	"name": "ebayenterprise/cms-assets",
-	"description": "eBay Enterprise CMS Assets Extension",
-	"license": "proprietary",
+	"name": "ebayenterprise/magento-cms-assets",
+	"description": "Magento CMS Assets Extension",
+	"license": "OSL-3.0",
 	"authors": [
 		{
 			"name": "Scott Buchanan",
@@ -14,7 +14,4 @@
 		}
 	],
 	"type": "magento-module",
-	"require": {
-		"magento-hackathon/magento-composer-installer": "*"
-	}
 }
